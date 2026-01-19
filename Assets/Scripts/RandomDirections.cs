@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RandomDirections : MonoBehaviour
 {
+    public static RandomDirections Instance;
+
     public int south;
     public int east;
     public int north;
@@ -16,8 +18,13 @@ public class RandomDirections : MonoBehaviour
 
     public KeyCode testKey = KeyCode.Space;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
+        
         RegenerateDirections();
     }
 
@@ -29,7 +36,7 @@ public class RandomDirections : MonoBehaviour
         }
     }
 
-    public void RegenerateDirections()
+    public int[] RegenerateDirections()
     {
         south = Random.Range(1, 5);
         east = Random.Range(1, 5);
@@ -37,6 +44,11 @@ public class RandomDirections : MonoBehaviour
         west = Random.Range(1, 5);
 
         UpdateUI();
+
+        return new int[]
+        {
+            north,south,east,west
+        };
     }
 
     void UpdateUI()
