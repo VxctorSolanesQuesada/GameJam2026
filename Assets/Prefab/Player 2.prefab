@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5496606520832889571}
   - component: {fileID: 1294545913640238224}
   - component: {fileID: 8961469570583641435}
+  - component: {fileID: 8425846465635285139}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -207,6 +208,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4c530e20-9985-4950-bb35-26d7a2e2379b
     m_ActionName: Gameplay/Move
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8425846465635285139}
+        m_TargetAssemblyTypeName: PlayerBattleInput, Assembly-CSharp
+        m_MethodName: OnBattle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cb83dbf6-bcf0-4b05-a804-9a185a7685be
+    m_ActionName: 'Gameplay/Vote[/SwitchProControllerHID/dpad,/SwitchProControllerHID1/dpad]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -238,7 +255,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc46bc386ce15f04e9d1daba21dc28e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIndex: 0
   chosenDir: 32
+  hasChosen: 0
+  confirmedDir: 32
 --- !u!114 &8961469570583641435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,3 +272,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridPos: {x: 2, y: 2}
+--- !u!114 &8425846465635285139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889661000526548246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a766b896cc61b92448f0fb9ed3b82661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
+  chosenBattle: 32
+  hasChosen: 0
+  confirmedBattle: 32

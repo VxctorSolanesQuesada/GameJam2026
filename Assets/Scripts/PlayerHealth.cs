@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
-        currentHP = maxHP;
+        //currentHP = maxHP;
     }
 
     public void TakeDmg(int num)

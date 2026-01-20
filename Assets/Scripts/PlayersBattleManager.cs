@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayersDirectionManager : MonoBehaviour
+public class PlayersBattleManager : MonoBehaviour
 {
-    public PlayerDirectionInput[] players = new PlayerDirectionInput[4];
+    public PlayerBattleInput[] players = new PlayerBattleInput[4];
 
     void Awake()
     {
@@ -15,18 +15,18 @@ public class PlayersDirectionManager : MonoBehaviour
         }
     }
 
-    public char[] GetPlayersDirections(List<PlayerDirectionInput> players)
+    public char[] GetPlayersDirections(List<PlayerBattleInput> players)
     {
         char[] result = new char[4]; int index = 0; 
         foreach (var p in players) 
         { 
-            result[index] = p != null ? p.chosenDir : ' '; 
+            result[index] = p != null ? p.chosenBattle : ' '; 
             index++; 
         }
         return result;
     }
 
-    public bool AllPlayersHaveChosen(List<PlayerDirectionInput> players)
+    public bool AllPlayersHaveChosen(List<PlayerBattleInput> players)
     {
         foreach (var p in players)
         {
@@ -41,7 +41,7 @@ public class PlayersDirectionManager : MonoBehaviour
     }
 
 
-    public void ResetAllChoices()
+    public void ResetAllChoicesBattle()
     {
         for (int i = 0; i < players.Length; i++)
         {
@@ -49,4 +49,21 @@ public class PlayersDirectionManager : MonoBehaviour
                 players[i].ResetChoice();
         }
     }
+
+    // Devuelve:
+    //  1 si A gana
+    // -1 si B gana
+    //  0 si empate
+    public int RPSResult(char a, char b)
+    {
+        if (a == b) return 0;
+
+        if ((a == 'r' && b == 's') ||
+            (a == 's' && b == 'p') ||
+            (a == 'p' && b == 'r'))
+            return 1;
+
+        return -1;
+    }
+
 }

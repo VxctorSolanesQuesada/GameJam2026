@@ -1,33 +1,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum Direction
-{
-    None,
-    North,
-    South,
-    East,
-    West
-}
+
 
 public class PlayerGridPosition : MonoBehaviour
 {
+
     public Vector2Int gridPos = new Vector2Int(2, 2);
-    public Direction direction;
-    public void Move(Direction dir)
+    public void Move(char c)
     {
-        gridPos += DirectionToDelta(dir);
-        transform.position = new Vector3(gridPos.x, transform.position.y, gridPos.y);
+        Vector2Int delta = DirectionToDelta(c);
+
+        // Actualizar gridPos
+        gridPos += delta;
+
+        float tileSize = 15f;
+        // Mover físicamente sumando el delta
+        transform.position += new Vector3(delta.x * tileSize, 0, delta.y * tileSize);
     }
 
-    Vector2Int DirectionToDelta(Direction dir)
+
+    Vector2Int DirectionToDelta(char c)
     {
-        switch (dir)
+        switch (c)
         {
-            case Direction.North: return new Vector2Int(0, 1);
-            case Direction.South: return new Vector2Int(0, -1);
-            case Direction.East: return new Vector2Int(1, 0);
-            case Direction.West: return new Vector2Int(-1, 0);
+            case 'n': return new Vector2Int(0, 1);
+            case 's': return new Vector2Int(0, -1);
+            case 'e': return new Vector2Int(1, 0);
+            case 'w': return new Vector2Int(-1, 0);
             default: return Vector2Int.zero;
         }
     }
