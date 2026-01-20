@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad7c8d8b351666c43a611da249a237f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1: {fileID: 3832312787120033360}
   grid: {fileID: 998425036}
   playerManager: {fileID: 998425038}
   dirManager: {fileID: 998425037}
@@ -982,6 +983,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+--- !u!114 &3832312787120033360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 861311222296240216, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+  m_PrefabInstance: {fileID: 3832312787120033359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f862e79d199ebf45bc1b1dc9ef5c7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

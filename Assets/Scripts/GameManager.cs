@@ -5,6 +5,8 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class GameManager : MonoBehaviour
 {
+
+    public PlayerCardImage p1;
     public enum TurnPhase { Dice, SetUpDirectionChoice, DirectionChoice, DirectionBattle, Move, RoomResolution, EndTurn };
     public MapController grid;
     public PlayerManager playerManager;
@@ -44,7 +46,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        p1.Set(CardIcon.Piedra);
     }
 
     // Update is called once per frame
