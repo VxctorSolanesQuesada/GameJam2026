@@ -232,6 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 998425035}
   - component: {fileID: 998425034}
+  - component: {fileID: 998425036}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -275,6 +276,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &998425036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998425033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33e575027ded2a43b3d6882f4b63719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 1817212191191915314, guid: 78b21501f6cb2c1468374146a2344efd, type: 3}
+  width: 5
+  height: 5
+  spacing: 15
 --- !u!114 &1103938385 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2259497983369543512, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}

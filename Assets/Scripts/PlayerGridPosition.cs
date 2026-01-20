@@ -11,26 +11,12 @@ public enum Direction
 
 public class PlayerGridPosition : MonoBehaviour
 {
-    public Vector2Int gridPos = new Vector2Int(2, 2); // center for 5x5 (0..4)
-
-    // Call this to move 1 tile in the chosen direction
-    public void Move(Direction dir, int gridSize = 5)
+    public Vector2Int gridPos = new Vector2Int(2, 2);
+    public Direction direction;
+    public void Move(Direction dir)
     {
-        Vector2Int delta = DirectionToDelta(dir);
-        Vector2Int target = gridPos + delta;
-
-        // board limits: 0..gridSize-1
-        if (target.x < 0 || target.x >= gridSize || target.y < 0 || target.y >= gridSize)
-        {
-            Debug.Log($"{gameObject.name} tried to move out of bounds: {target}");
-            return;
-        }
-
-        gridPos = target;
-        Debug.Log($"{gameObject.name} moved to {gridPos}");
-
-        // Optional: if you want the GameObject to move in world space too
-        // transform.position = new Vector3(gridPos.x, gridPos.y, 0f);
+        gridPos += DirectionToDelta(dir);
+        transform.position = new Vector3(gridPos.x, transform.position.y, gridPos.y);
     }
 
     Vector2Int DirectionToDelta(Direction dir)
@@ -45,3 +31,4 @@ public class PlayerGridPosition : MonoBehaviour
         }
     }
 }
+
