@@ -27,21 +27,74 @@ public class PlayerCardImage : MonoBehaviour
     [SerializeField] private Sprite papelSprite;
     [SerializeField] private Sprite tijerasSprite;
 
+    // Flip animation state
+    private bool isFlipping = false;
+    private bool reachedHalf = false;
+    private float flipTimer = 0f;
+    private float flipDuration = 0.5f;
+    private CardIcon pendingIcon;
+
     private void Awake()
     {
         if (targetImage == null)
             targetImage = GetComponent<Image>();
     }
 
+    private void Update()
+    {
+        if (!isFlipping)
+            return;
+
+        flipTimer += Time.deltaTime;
+
+        if (!reachedHalf)
+        {
+            // Primera mitad: 0 ? 90 grados
+            float t = flipTimer / flipDuration;
+            float angle = Mathf.Lerp(0f, 90f, t);
+            transform.localRotation = Quaternion.Euler(0f, angle, 0f);
+
+            if (t >= 1f)
+            {
+                // Cambiar sprite justo en 90°
+                targetImage.sprite = GetSprite(pendingIcon);
+
+                // Preparar segunda mitad
+                flipTimer = 0f;
+                reachedHalf = true;
+            }
+        }
+        else
+        {
+            // Segunda mitad: 90 ? 0 grados
+            float t = flipTimer / flipDuration;
+            float angle = Mathf.Lerp(90f, 0f, t);
+            transform.localRotation = Quaternion.Euler(0f, angle, 0f);
+
+            if (t >= 1f)
+            {
+                // Fin de animación
+                transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+                isFlipping = false;
+            }
+        }
+    }
+
     public void Set(CardIcon icon)
     {
-        targetImage.sprite = GetSprite(icon);
+        if (isFlipping)
+            return; // evita solapamientos
+
+        pendingIcon = icon;
+        flipTimer = 0f;
+        reachedHalf = false;
+        isFlipping = true;
     }
 
     public CardIcon GetCurrent(out Sprite sprite)
     {
         sprite = targetImage.sprite;
-        return CardIcon.Default; // CHECK
+        return CardIcon.Default; // Puedes mejorarlo si quieres
     }
 
     private Sprite GetSprite(CardIcon icon)
@@ -60,6 +113,7 @@ public class PlayerCardImage : MonoBehaviour
         };
     }
 
+    // Métodos helper
     public void SetDefault() => Set(CardIcon.Default);
     public void SetNorte() => Set(CardIcon.Norte);
     public void SetSur() => Set(CardIcon.Sur);

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public PlayerManager playerManager;
     public PlayersDirectionManager dirManager;
     public PlayersBattleManager battleManager;
+    public BattleUIController battleUIController;
 
 
     public List<PlayerHealth> playing = new List<PlayerHealth>();
@@ -25,6 +26,13 @@ public class GameManager : MonoBehaviour
     private Queue<List<PlayerDirectionInput>> pendingBattles = new Queue<List<PlayerDirectionInput>>();
     private bool waitingDirectionBattleInput = false;
     private List<PlayerDirectionInput> currentBattlePlayers = new List<PlayerDirectionInput>();
+
+    private List<PlayerDirectionInput> battleGroup;
+    private List<PlayerBattleInput> currentBattlingPlayers;
+    private PlayerBattleInput battle1;
+    private PlayerBattleInput battle2;
+    private bool playersChosen = false;
+
 
     public float pauseTimerChoicesSelcted = 5.0f;
     public float pauseTimerDiceRoll = 3.0f;
@@ -109,22 +117,27 @@ public class GameManager : MonoBehaviour
                         {
                             case 's':
                                 pDI.pCartImage.SetSur();
+                                StartCoroutine(ChoicesSelectedTimer());
                                 break;
                             case 'n':
                                 pDI.pCartImage.SetNorte();
+                                StartCoroutine(ChoicesSelectedTimer());
                                 break;
                             case 'e':
                                 pDI.pCartImage.SetEste();
+                                StartCoroutine(ChoicesSelectedTimer());
                                 break;
                             case 'w':
                                 pDI.pCartImage.SetOeste();
+                                StartCoroutine(ChoicesSelectedTimer());
                                 break;
                         }
                     }
 
-                    ChoicesSelectedTimer();
+                    
 
-                    currentPhase = TurnPhase.DirectionBattle;
+
+                        currentPhase = TurnPhase.DirectionBattle;
 
                 }
                 break;
@@ -132,7 +145,6 @@ public class GameManager : MonoBehaviour
             case TurnPhase.DirectionBattle:
                 Debug.Log("=== FASE: DirectionBattle ? Resolviendo conflictos de direcciones ===");
                 //-----Fase Direction Battle------
-
                 if (!directionBattleResolved)
                 {
                     int countS = 0; int countN = 0; int countE = 0; int countW = 0;
@@ -161,6 +173,7 @@ public class GameManager : MonoBehaviour
                     if (countW > dirValues[3])
                         pendingBattles.Enqueue(GetPlayersByDirection(listDirInput, 'w'));
 
+                    playersChosen = false;
                     directionBattleResolved = true;
                 }
                 // Si estamos esperando inputs de la batalla actual
@@ -169,10 +182,40 @@ public class GameManager : MonoBehaviour
                     if (dirManager.AllPlayersHaveChosen(currentBattlePlayers))
                     {
                         foreach (var p in currentBattlePlayers)
+                        {
                             p.confirmInput();
+                            switch (p.confirmedDir)
+                            {
+                                case 's':
+                                    p.pCartImage.SetSur();
+                                    StartCoroutine(PauseBattleSelectedTimer());
+                                    break;
+                                case 'n':
+                                    p.pCartImage.SetNorte();
+                                    StartCoroutine(PauseBattleSelectedTimer());
+                                    break;
+                                case 'e':
+                                    p.pCartImage.SetEste();
+                                    StartCoroutine(PauseBattleSelectedTimer());
+                                    break;
+                                case 'w':
+                                    p.pCartImage.SetOeste();
+                                    StartCoroutine(ChoicesSelectedTimer());
+                                    break;
+                            }
+                        }
+                            
 
                         waitingDirectionBattleInput = false;
                         currentBattlePlayers.Clear();
+                        playersChosen = false;
+
+                        battleGroup.Clear();
+                        currentBattlingPlayers.Clear();
+                        battle1 = null;
+                        battle2 = null;
+                        break;
+
                     }
                     else
                     {
@@ -183,26 +226,34 @@ public class GameManager : MonoBehaviour
                 // Si no estamos esperando inputs, resolver la siguiente batalla
                 if (pendingBattles.Count > 0)
                 {
-                    List<PlayerDirectionInput> battleGroup = pendingBattles.Peek();
-
-                    List<PlayerBattleInput> currentBattlingPlayers = new List<PlayerBattleInput>();
-
-                    // Elegir el primero
-                    int index1 = Random.Range(0, battleGroup.Count);
-                    PlayerBattleInput battle1 = battleGroup[index1].gameObject.GetComponent<PlayerBattleInput>();
-                    currentBattlingPlayers.Add(battle1);
-
-                    // Elegir el segundo asegurando que no sea el mismo
-                    int index2;
-                    do
+                    
+                    if (!playersChosen)
                     {
-                        index2 = Random.Range(0, battleGroup.Count);
+                        battleGroup = pendingBattles.Peek();
+
+                        currentBattlingPlayers = new List<PlayerBattleInput>();
+
+                        // Elegir el primero
+                        int index1 = Random.Range(0, battleGroup.Count);
+                        battle1 = battleGroup[index1].gameObject.GetComponent<PlayerBattleInput>();
+                        currentBattlingPlayers.Add(battle1);
+
+                        // Elegir el segundo asegurando que no sea el mismo
+                        int index2;
+                        do
+                        {
+                            index2 = Random.Range(0, battleGroup.Count);
+                        }
+                        while (index2 == index1);
+
+                        battle2 = battleGroup[index2].gameObject.GetComponent<PlayerBattleInput>();
+                        currentBattlingPlayers.Add(battle2);
+                        playersChosen = true;
+                        battleUIController.ShowBattle(currentBattlingPlayers);
                     }
-                    while (index2 == index1);
+                    
 
-                    PlayerBattleInput battle2 = battleGroup[index2].gameObject.GetComponent<PlayerBattleInput>();
-                    currentBattlingPlayers.Add(battle2);
-
+                    
                     if (battleManager.AllPlayersHaveChosen(currentBattlingPlayers))
                     {
                         foreach(var p in currentBattlingPlayers)
@@ -229,6 +280,8 @@ public class GameManager : MonoBehaviour
                         PlayerBattleInput winner = (result == 1) ? battle1 : battle2; 
                         PlayerBattleInput loser = (result == 1) ? battle2 : battle1;
 
+                        battleUIController.HideBattle();
+
                         Debug.Log($"Ganador de la batalla: {winner.name}");
 
                         currentBattlePlayers.Clear(); 
@@ -245,6 +298,14 @@ public class GameManager : MonoBehaviour
                 }
 
                 // Si no quedan batallas ? pasar a Move
+                
+                foreach (PlayerDirectionInput pDI in listDirInput)
+                {
+                    pDI.pCartImage.SetDefault();
+
+                }
+                StartCoroutine(ChoicesSelectedTimer());
+
                 currentPhase = TurnPhase.Move;
                 break;
 
@@ -253,6 +314,9 @@ public class GameManager : MonoBehaviour
             case TurnPhase.Move:
                 Debug.Log("=== FASE: Move ? Moviendo jugadores y revelando tiles ===");
                 //---------Fase Move--------
+
+                
+
 
                 foreach (PlayerHealth n in playing)
                 {
@@ -330,13 +394,19 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator ChoicesSelectedTimer()
     {
+        didGameEnded = true;
         yield return new WaitForSeconds(pauseTimerChoicesSelcted);
         Debug.Log("Choices Selected finished");
+        didGameEnded = false;
     }
 
     IEnumerator PauseBattleSelectedTimer()
     {
+        didGameEnded = true;
+
         yield return new WaitForSeconds(pauseBattleTimer);
+        didGameEnded = false;
+
     }
 
     IEnumerator PauseVoteSelectedTimer()

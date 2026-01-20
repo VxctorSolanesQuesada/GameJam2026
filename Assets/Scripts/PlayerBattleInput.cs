@@ -7,6 +7,7 @@ public class PlayerBattleInput : MonoBehaviour
     public char chosenBattle = ' ';  // 'n','s','e','w'
     public bool hasChosen = false;
     public char confirmedBattle = ' ';
+    public Sprite battleSprite;
 
     // Set this from the manager in Start (since players exist from the beginning)
     public void SetPlayerIndex(int index)

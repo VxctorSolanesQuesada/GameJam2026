@@ -197,12 +197,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5496606520832889571, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: currentHP
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5589009294709862818, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: playerIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5589009294709862818, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: battleSprite
+      value: 
+      objectReference: {fileID: -8693641729476356406, guid: 20710e55e05209a45a202f7b778c7ee2, type: 3}
     - target: {fileID: 7889661000526548246, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_Name
       value: Player 4
@@ -331,7 +335,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5111184, y: -0, z: -0, w: 0.8595103}
-  m_LocalPosition: {x: 22.5, y: 72, z: -6.2}
+  m_LocalPosition: {x: 22.5, y: 76.46, z: -8.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -601,6 +605,7 @@ GameObject:
   - component: {fileID: 998425038}
   - component: {fileID: 998425037}
   - component: {fileID: 998425040}
+  - component: {fileID: 998425041}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -710,9 +715,10 @@ MonoBehaviour:
   playerManager: {fileID: 998425038}
   dirManager: {fileID: 998425037}
   battleManager: {fileID: 998425040}
+  battleUIController: {fileID: 998425041}
   playing: []
   listDirInput: []
-  pauseTimerChoicesSelcted: 5
+  pauseTimerChoicesSelcted: 2
   pauseTimerDiceRoll: 3
   pauseBattleTimer: 3
   pauseVoteTimer: 3
@@ -734,6 +740,27 @@ MonoBehaviour:
   - {fileID: 1253965371}
   - {fileID: 1019371018}
   - {fileID: 215909825}
+--- !u!114 &998425041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998425033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3edbd535d23fdf043a262911ac77ff20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battlePanel: {fileID: 1121922949}
+  player1Image: {fileID: 1925013737}
+  player2Image: {fileID: 2072663368}
+  introObject: {fileID: 0}
+  introImage1: {fileID: 0}
+  introImage2: {fileID: 0}
+  moveDistance: 100
+  fadeDuration: 0.5
+  moveDuration: 0.5
 --- !u!1001 &1019371017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -758,6 +785,10 @@ PrefabInstance:
       propertyPath: playerIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3063386898268520557, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: battleSprite
+      value: 
+      objectReference: {fileID: 1875363959760874231, guid: 60a44890e878eb346af30c1b5fdfadce, type: 3}
     - target: {fileID: 4833965005491224512, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.8
@@ -854,6 +885,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c5f49c0b58208134d996f44d4513ef89, type: 2}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
     - target: {fileID: 4833965005491224512, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.8
@@ -914,6 +949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9157771078298204719, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: battleSprite
+      value: 
+      objectReference: {fileID: -6328166743029815618, guid: 6b6be83f31c21a645aa8b31efc9c5351, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -941,6 +980,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1121922949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 612730335185610437, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+  m_PrefabInstance: {fileID: 3832312787120033359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1253965370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1025,6 +1069,10 @@ PrefabInstance:
       propertyPath: playerIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8425846465635285139, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: battleSprite
+      value: 
+      objectReference: {fileID: 4406991992627833246, guid: a7eba17c160fa9e4aa547faa6345433f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1131,6 +1179,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925013737 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7741961669847995456, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+  m_PrefabInstance: {fileID: 3832312787120033359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1966147171 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9203035843856254386, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
@@ -1237,6 +1296,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb612e719eefb6d4bb9f08bb2223f3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2072663368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 880827535636710925, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+  m_PrefabInstance: {fileID: 3832312787120033359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3832312787120033359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,6 +1315,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612730335185610437, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 651533543235683719, guid: c4af9497b72f96c4fb0048e8bc22f979, type: 3}
       propertyPath: m_Sprite
       value: 
