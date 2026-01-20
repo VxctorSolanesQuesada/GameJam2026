@@ -1010,7 +1010,7 @@
                 {
                     "name": "",
                     "id": "43f8ed2a-0507-4a88-96a1-d3cdd0d3e80d",
-                    "path": "<Gamepad>/rightStick",
+                    "path": "<Gamepad>/dpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
