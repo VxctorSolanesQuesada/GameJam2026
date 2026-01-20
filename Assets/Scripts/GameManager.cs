@@ -1,12 +1,11 @@
 using NUnit.Framework.Constraints;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class GameManager : MonoBehaviour
 {
-
-    public PlayerCardImage p1;
     public enum TurnPhase { Dice, SetUpDirectionChoice, DirectionChoice, DirectionBattle, Move, RoomResolution, EndTurn };
     public MapController grid;
     public PlayerManager playerManager;
@@ -27,6 +26,12 @@ public class GameManager : MonoBehaviour
     private bool waitingDirectionBattleInput = false;
     private List<PlayerDirectionInput> currentBattlePlayers = new List<PlayerDirectionInput>();
 
+    public float pauseTimerChoicesSelcted = 5.0f;
+    public float pauseTimerDiceRoll = 3.0f;
+    public float pauseBattleTimer = 3.0f;
+    public float pauseVoteTimer = 3.0f;
+    public float pauseWonBattleTimer = 3.0f;
+
 
     List<PlayerDirectionInput> GetPlayersByDirection(List<PlayerDirectionInput> list, char dir)
     {
@@ -46,7 +51,6 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        p1.Set(CardIcon.Piedra);
     }
 
     // Update is called once per frame
@@ -101,7 +105,24 @@ public class GameManager : MonoBehaviour
                     foreach (PlayerDirectionInput pDI in listDirInput)
                     {
                         pDI.confirmInput();
+                        switch (pDI.confirmedDir)
+                        {
+                            case 's':
+                                pDI.pCartImage.SetSur();
+                                break;
+                            case 'n':
+                                pDI.pCartImage.SetNorte();
+                                break;
+                            case 'e':
+                                pDI.pCartImage.SetEste();
+                                break;
+                            case 'w':
+                                pDI.pCartImage.SetOeste();
+                                break;
+                        }
                     }
+
+                    ChoicesSelectedTimer();
 
                     currentPhase = TurnPhase.DirectionBattle;
 
@@ -195,10 +216,12 @@ public class GameManager : MonoBehaviour
                         int result = battleManager.RPSResult(a, b);
 
                         if (result == 0)
-                        { 
+                        {
                             // EMPATE ? repetir batalla
+                            PauseBattleSelectedTimer();
                             Debug.Log("Empate en batalla RPS. Repitiendo...");
-                            battleManager.ResetAllChoicesBattle(); 
+
+                            battleManager.ResetAllChoicesBattle();
                             break; 
                         }
 
@@ -304,26 +327,28 @@ public class GameManager : MonoBehaviour
 
                 break;
             }
-
-
-
-
-
-
-
-        
-
-
-        
-
-
-        
-
-
-
-        
-
-
-
     }
+    IEnumerator ChoicesSelectedTimer()
+    {
+        yield return new WaitForSeconds(pauseTimerChoicesSelcted);
+        Debug.Log("Choices Selected finished");
+    }
+
+    IEnumerator PauseBattleSelectedTimer()
+    {
+        yield return new WaitForSeconds(pauseBattleTimer);
+    }
+
+    IEnumerator PauseVoteSelectedTimer()
+    {
+        yield return new WaitForSeconds(pauseVoteTimer);
+    }
+
+    IEnumerator PauseBattleWonSelectedTimer()
+    {
+        yield return new WaitForSeconds(pauseWonBattleTimer);
+    }
+
+
+
 }

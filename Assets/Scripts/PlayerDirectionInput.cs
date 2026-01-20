@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerDirectionInput : MonoBehaviour
 {
+    public PlayerCardImage pCartImage;
+
     public int playerIndex;       // 0..3
     public char chosenDir = ' ';  // 'n','s','e','w'
     public bool hasChosen = false;
