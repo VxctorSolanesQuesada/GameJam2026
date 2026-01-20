@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7372e852834d93c4f80f5bb5f7a96aa6
+guid: 31de46bd8eaccc54b8a0ba91e0ecc796
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8867535055122683118
-    second: CartaDetras_0
+      213: -4361296228240289999
+    second: DrawTYpo_0
+  - first:
+      213: -7268739815401558952
+    second: DrawTYpo_1
+  - first:
+      213: 476679932948365010
+    second: DrawTYpo_2
+  - first:
+      213: -6500710771710377821
+    second: DrawTYpo_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CartaDetras_0
+      name: DrawTYpo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 1595
-        height: 2292
+        x: 39
+        y: 34
+        width: 217
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee459e18620df0b70800000000000000
-      internalID: 8867535055122683118
+      spriteID: 13f8c7300309973c0800000000000000
+      internalID: -4361296228240289999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrawTYpo_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 32
+        width: 199
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c604a36af302b90800000000000000
+      internalID: -7268739815401558952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrawTYpo_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 32
+        width: 221
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deb1fa9fd18d9600800000000000000
+      internalID: 476679932948365010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrawTYpo_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 32
+        width: 329
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0c5a0def5d8c5a0800000000000000
+      internalID: -6500710771710377821
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CartaDetras_0: 8867535055122683118
+      DrawTYpo_0: -4361296228240289999
+      DrawTYpo_1: -7268739815401558952
+      DrawTYpo_2: 476679932948365010
+      DrawTYpo_3: -6500710771710377821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

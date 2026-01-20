@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: e0b89ad296443de4796361357b0a2008
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6607276772156708627
+    second: ChooseDirectionTYPO_0
+  - first:
+      213: 3717318713401401450
+    second: ChooseDirectionTYPO_1
+  - first:
+      213: -5806287582293851538
+    second: ChooseDirectionTYPO_2
+  - first:
+      213: -1439252714741164530
+    second: ChooseDirectionTYPO_3
+  - first:
+      213: 6124328575490839621
+    second: ChooseDirectionTYPO_4
+  - first:
+      213: -7937081186768430660
+    second: ChooseDirectionTYPO_5
+  - first:
+      213: 6364232817120596836
+    second: ChooseDirectionTYPO_6
+  - first:
+      213: -1768835082161518698
+    second: ChooseDirectionTYPO_7
+  - first:
+      213: 1501486288356375500
+    second: ChooseDirectionTYPO_8
+  - first:
+      213: -5696270172371523228
+    second: ChooseDirectionTYPO_9
+  - first:
+      213: -7897902333891634100
+    second: ChooseDirectionTYPO_10
+  - first:
+      213: -6903510668889043886
+    second: ChooseDirectionTYPO_11
+  - first:
+      213: 8466607924697201309
+    second: ChooseDirectionTYPO_12
+  - first:
+      213: -6004810185239409397
+    second: ChooseDirectionTYPO_13
+  - first:
+      213: -4363613400824631539
+    second: ChooseDirectionTYPO_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 47
+        width: 195
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8e8e658cc3e44a0800000000000000
+      internalID: -6607276772156708627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 45
+        width: 230
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60e335bca1969330800000000000000
+      internalID: 3717318713401401450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 67
+        width: 188
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e620d99f43ceb6fa0800000000000000
+      internalID: -5806287582293851538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 67
+        width: 189
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0616db084fb60ce0800000000000000
+      internalID: -1439252714741164530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_4
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 47
+        width: 158
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544d7ed246cfdf450800000000000000
+      internalID: 6124328575490839621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_5
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 47
+        width: 188
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb95b3d86b2d9d190800000000000000
+      internalID: -7937081186768430660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_6
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 50
+        width: 231
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4635b5c270c425850800000000000000
+      internalID: 6364232817120596836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_7
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 55
+        width: 103
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697838d4dd5d377e0800000000000000
+      internalID: -1768835082161518698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_8
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 43
+        width: 216
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbf994f2d956d410800000000000000
+      internalID: 1501486288356375500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_9
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 47
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46964275578c2f0b0800000000000000
+      internalID: -5696270172371523228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_10
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 47
+        width: 180
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c19a51ca3056290800000000000000
+      internalID: -7897902333891634100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_11
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 45
+        width: 199
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ccfbd7f9dc130a0800000000000000
+      internalID: -6903510668889043886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_12
+      rect:
+        serializedVersion: 2
+        x: 2558
+        y: 55
+        width: 103
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a751cac0f6f7570800000000000000
+      internalID: 8466607924697201309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_13
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 67
+        width: 193
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d482d83f0aaaca0800000000000000
+      internalID: -6004810185239409397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChooseDirectionTYPO_14
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 37
+        width: 263
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fa6ba3bb45173c0800000000000000
+      internalID: -4363613400824631539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ChooseDirectionTYPO_0: -6607276772156708627
+      ChooseDirectionTYPO_1: 3717318713401401450
+      ChooseDirectionTYPO_10: -7897902333891634100
+      ChooseDirectionTYPO_11: -6903510668889043886
+      ChooseDirectionTYPO_12: 8466607924697201309
+      ChooseDirectionTYPO_13: -6004810185239409397
+      ChooseDirectionTYPO_14: -4363613400824631539
+      ChooseDirectionTYPO_2: -5806287582293851538
+      ChooseDirectionTYPO_3: -1439252714741164530
+      ChooseDirectionTYPO_4: 6124328575490839621
+      ChooseDirectionTYPO_5: -7937081186768430660
+      ChooseDirectionTYPO_6: 6364232817120596836
+      ChooseDirectionTYPO_7: -1768835082161518698
+      ChooseDirectionTYPO_8: 1501486288356375500
+      ChooseDirectionTYPO_9: -5696270172371523228
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

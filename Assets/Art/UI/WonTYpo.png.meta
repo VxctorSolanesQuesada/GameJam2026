@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7372e852834d93c4f80f5bb5f7a96aa6
+guid: 2ee347956c85f014082eee2aba6d2e00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8867535055122683118
-    second: CartaDetras_0
+      213: 8496073794824566300
+    second: WonTYpo_0
+  - first:
+      213: 2750604004508654759
+    second: WonTYpo_1
+  - first:
+      213: 691543823048182686
+    second: WonTYpo_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CartaDetras_0
+      name: WonTYpo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 1595
-        height: 2292
+        x: 15
+        y: 31
+        width: 384
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee459e18620df0b70800000000000000
-      internalID: 8867535055122683118
+      spriteID: c16f50e2a1e18e570800000000000000
+      internalID: 8496073794824566300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WonTYpo_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 31
+        width: 223
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac518ec4cb1c2620800000000000000
+      internalID: 2750604004508654759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WonTYpo_2
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 31
+        width: 257
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b076f617bd89900800000000000000
+      internalID: 691543823048182686
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CartaDetras_0: 8867535055122683118
+      WonTYpo_0: 8496073794824566300
+      WonTYpo_1: 2750604004508654759
+      WonTYpo_2: 691543823048182686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

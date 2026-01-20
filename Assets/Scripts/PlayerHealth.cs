@@ -1,9 +1,19 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHP = 100;
     public int currentHP;
+
+    public Sprite playerSprite;
+
+    [SerializeField] public GameObject canvasObjectToActivate;
+    [SerializeField] public Image targetImage;
+    [SerializeField] public TextMeshProUGUI hpText;
+    [SerializeField] public TextMeshProUGUI hpPlayerText;
+
 
     void Awake()
     {
@@ -24,7 +34,36 @@ public class PlayerHealth : MonoBehaviour
         {
             Die();
         }
-            
+
+        hpPlayerText.text = $"{currentHP}";
+        ActivateUI(num);
+    }
+
+    public void ActivateUI(int lostHP)
+    {
+        // Activar canvas / panel
+        if (canvasObjectToActivate != null)
+        {
+            canvasObjectToActivate.SetActive(true);
+        }
+
+        // Aplicar sprite del jugador
+        targetImage.sprite = playerSprite;
+
+
+        // Cambiar texto
+        if (hpText != null)
+        {
+            hpText.text = $"Has lost {lostHP} HP!";
+        }
+    }
+
+    public void DeactivateUI()
+    {
+        if (canvasObjectToActivate != null)
+        {
+            canvasObjectToActivate.SetActive(false);
+        }
     }
 
     void Die()
@@ -33,4 +72,6 @@ public class PlayerHealth : MonoBehaviour
         // aquí luego puedes: desactivar jugador, animación, etc.
         gameObject.SetActive(false);
     }
+
+
 }

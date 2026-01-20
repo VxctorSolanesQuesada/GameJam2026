@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 9ad903ec910a58646bc23e3cff5ba833
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3141629501336872959
+    second: CDTYPO2_0
+  - first:
+      213: -1235844018242645318
+    second: CDTYPO2_1
+  - first:
+      213: 2911310143841078790
+    second: CDTYPO2_2
+  - first:
+      213: 8313037998211525508
+    second: CDTYPO2_3
+  - first:
+      213: 3877742645451810749
+    second: CDTYPO2_4
+  - first:
+      213: -3475647943319829340
+    second: CDTYPO2_5
+  - first:
+      213: 1934400647281319511
+    second: CDTYPO2_6
+  - first:
+      213: -296915057655677156
+    second: CDTYPO2_7
+  - first:
+      213: -412159213345244351
+    second: CDTYPO2_8
+  - first:
+      213: 3082083173815283604
+    second: CDTYPO2_9
+  - first:
+      213: -5074791100075594506
+    second: CDTYPO2_10
+  - first:
+      213: -3935300831256585763
+    second: CDTYPO2_11
+  - first:
+      213: -7828837073568320394
+    second: CDTYPO2_12
+  - first:
+      213: -7825250771129258463
+    second: CDTYPO2_13
+  - first:
+      213: 1525280709329348032
+    second: CDTYPO2_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CDTYPO2_0
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 423
+        width: 195
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7621be26f499b20800000000000000
+      internalID: 3141629501336872959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 421
+        width: 230
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab21bd6c96669dee0800000000000000
+      internalID: -1235844018242645318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_2
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 443
+        width: 188
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e83aaa62d076820800000000000000
+      internalID: 2911310143841078790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_3
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 443
+        width: 189
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48be8b7d308dd5370800000000000000
+      internalID: 8313037998211525508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_4
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 423
+        width: 158
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7e980146280d530800000000000000
+      internalID: 3877742645451810749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_5
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 423
+        width: 188
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4ca1e3c9404cfc0800000000000000
+      internalID: -3475647943319829340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 74
+        width: 231
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e1d7ac32f58da10800000000000000
+      internalID: 1934400647281319511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_7
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 79
+        width: 103
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ff7f3045521ebf0800000000000000
+      internalID: -296915057655677156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_8
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 67
+        width: 216
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bf6a11167b74af0800000000000000
+      internalID: -412159213345244351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_9
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 71
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fe7772152c5ca20800000000000000
+      internalID: 3082083173815283604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_10
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 71
+        width: 180
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc2ea2c168b299b0800000000000000
+      internalID: -5074791100075594506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_11
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 69
+        width: 199
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d6ac7eb00369c0800000000000000
+      internalID: -3935300831256585763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_12
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 79
+        width: 103
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6743d8919226a5390800000000000000
+      internalID: -7828837073568320394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_13
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 91
+        width: 193
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e2d7432ef176390800000000000000
+      internalID: -7825250771129258463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CDTYPO2_14
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 61
+        width: 263
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5e45e49b2ea2510800000000000000
+      internalID: 1525280709329348032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CDTYPO2_0: 3141629501336872959
+      CDTYPO2_1: -1235844018242645318
+      CDTYPO2_10: -5074791100075594506
+      CDTYPO2_11: -3935300831256585763
+      CDTYPO2_12: -7828837073568320394
+      CDTYPO2_13: -7825250771129258463
+      CDTYPO2_14: 1525280709329348032
+      CDTYPO2_2: 2911310143841078790
+      CDTYPO2_3: 8313037998211525508
+      CDTYPO2_4: 3877742645451810749
+      CDTYPO2_5: -3475647943319829340
+      CDTYPO2_6: 1934400647281319511
+      CDTYPO2_7: -296915057655677156
+      CDTYPO2_8: -412159213345244351
+      CDTYPO2_9: 3082083173815283604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

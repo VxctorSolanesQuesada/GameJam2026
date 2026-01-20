@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 7372e852834d93c4f80f5bb5f7a96aa6
+guid: e4b081884f1975548b4ac583dbc39bc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8867535055122683118
-    second: CartaDetras_0
+      213: 1188943265529050335
+    second: FightTypo_0
+  - first:
+      213: -2337114558148644646
+    second: FightTypo_1
+  - first:
+      213: 9169848747121570499
+    second: FightTypo_2
+  - first:
+      213: 5431743264168275167
+    second: FightTypo_3
+  - first:
+      213: 3994227762100427371
+    second: FightTypo_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CartaDetras_0
+      name: FightTypo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 1595
-        height: 2292
+        x: 41
+        y: 35
+        width: 344
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee459e18620df0b70800000000000000
-      internalID: 8867535055122683118
+      spriteID: fd4b3f7c999ff7010800000000000000
+      internalID: 1188943265529050335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FightTypo_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 63
+        width: 171
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0f72221b6e09fd0800000000000000
+      internalID: -2337114558148644646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FightTypo_2
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 49
+        width: 395
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2fd300ad8d14f70800000000000000
+      internalID: 9169848747121570499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FightTypo_3
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 49
+        width: 420
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdceedb58bd616b40800000000000000
+      internalID: 5431743264168275167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FightTypo_4
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 55
+        width: 365
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6adfffbcf85e6730800000000000000
+      internalID: 3994227762100427371
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CartaDetras_0: 8867535055122683118
+      FightTypo_0: 1188943265529050335
+      FightTypo_1: -2337114558148644646
+      FightTypo_2: 9169848747121570499
+      FightTypo_3: 5431743264168275167
+      FightTypo_4: 3994227762100427371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
