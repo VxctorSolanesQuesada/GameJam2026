@@ -1059,6 +1059,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Join",
+            "id": "4875487e-2405-45dd-b8de-97c751f067b1",
+            "actions": [
+                {
+                    "name": "Join",
+                    "type": "Button",
+                    "id": "294b0d1f-bc9f-4232-ae7a-10a6e4d4216b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c6cc904c-5a6b-4520-ae61-e6e0a5e7f38d",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

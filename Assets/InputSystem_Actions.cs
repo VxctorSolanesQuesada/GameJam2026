@@ -1145,6 +1145,34 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Join"",
+            ""id"": ""4875487e-2405-45dd-b8de-97c751f067b1"",
+            ""actions"": [
+                {
+                    ""name"": ""Join"",
+                    ""type"": ""Button"",
+                    ""id"": ""294b0d1f-bc9f-4232-ae7a-10a6e4d4216b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""c6cc904c-5a6b-4520-ae61-e6e0a5e7f38d"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Join"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -1238,6 +1266,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Vote = m_Gameplay.FindAction("Vote", throwIfNotFound: true);
         m_Gameplay_Vote1 = m_Gameplay.FindAction("Vote1", throwIfNotFound: true);
+        // Join
+        m_Join = asset.FindActionMap("Join", throwIfNotFound: true);
+        m_Join_Join = m_Join.FindAction("Join", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1245,6 +1276,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, InputSystem_Actions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, InputSystem_Actions.UI.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_Gameplay.enabled, "This will cause a leak and performance issues, InputSystem_Actions.Gameplay.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Join.enabled, "This will cause a leak and performance issues, InputSystem_Actions.Join.Disable() has not been called.");
     }
 
     /// <summary>
@@ -1813,6 +1845,102 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="GameplayActions" /> instance referencing this action map.
     /// </summary>
     public GameplayActions @Gameplay => new GameplayActions(this);
+
+    // Join
+    private readonly InputActionMap m_Join;
+    private List<IJoinActions> m_JoinActionsCallbackInterfaces = new List<IJoinActions>();
+    private readonly InputAction m_Join_Join;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "Join".
+    /// </summary>
+    public struct JoinActions
+    {
+        private @InputSystem_Actions m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public JoinActions(@InputSystem_Actions wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "Join/Join".
+        /// </summary>
+        public InputAction @Join => m_Wrapper.m_Join_Join;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_Join; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="JoinActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(JoinActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="JoinActions" />
+        public void AddCallbacks(IJoinActions instance)
+        {
+            if (instance == null || m_Wrapper.m_JoinActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_JoinActionsCallbackInterfaces.Add(instance);
+            @Join.started += instance.OnJoin;
+            @Join.performed += instance.OnJoin;
+            @Join.canceled += instance.OnJoin;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="JoinActions" />
+        private void UnregisterCallbacks(IJoinActions instance)
+        {
+            @Join.started -= instance.OnJoin;
+            @Join.performed -= instance.OnJoin;
+            @Join.canceled -= instance.OnJoin;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="JoinActions.UnregisterCallbacks(IJoinActions)" />.
+        /// </summary>
+        /// <seealso cref="JoinActions.UnregisterCallbacks(IJoinActions)" />
+        public void RemoveCallbacks(IJoinActions instance)
+        {
+            if (m_Wrapper.m_JoinActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="JoinActions.AddCallbacks(IJoinActions)" />
+        /// <seealso cref="JoinActions.RemoveCallbacks(IJoinActions)" />
+        /// <seealso cref="JoinActions.UnregisterCallbacks(IJoinActions)" />
+        public void SetCallbacks(IJoinActions instance)
+        {
+            foreach (var item in m_Wrapper.m_JoinActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_JoinActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="JoinActions" /> instance referencing this action map.
+    /// </summary>
+    public JoinActions @Join => new JoinActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -2055,5 +2183,20 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnVote1(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Join" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="JoinActions.AddCallbacks(IJoinActions)" />
+    /// <seealso cref="JoinActions.RemoveCallbacks(IJoinActions)" />
+    public interface IJoinActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Join" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnJoin(InputAction.CallbackContext context);
     }
 }

@@ -190,22 +190,42 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f29df8c1162153d4590da99b5909d315, type: 2}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 22
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionId
       value: d3b9687e-ab88-4274-8e65-4e1bd8ac8178
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
+      value: 294b0d1f-bc9f-4232-ae7a-10a6e4d4216b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionName
       value: 'Gameplay/Vote1[/XInputControllerWindows/dpad,/SwitchProControllerHID/dpad,/SwitchProControllerHID1/dpad]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
+      value: 'Join/Join[/SwitchProControllerHID1/rightStickPress,/XInputControllerWindows/rightStickPress,/SwitchProControllerHID/rightStickPress]'
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
@@ -213,7 +233,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1987093294}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
@@ -221,11 +249,23 @@ PrefabInstance:
       value: OnVote
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerVoteInput, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerJoinListener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: 7636430caf4998242877e57df50d6129, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4833965005491224512, guid: 7636430caf4998242877e57df50d6129, type: 3}
@@ -1027,22 +1067,42 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 980e05289351cea41a1aa54914cf628d, type: 2}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 22
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionId
       value: d3b9687e-ab88-4274-8e65-4e1bd8ac8178
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
+      value: 294b0d1f-bc9f-4232-ae7a-10a6e4d4216b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionName
       value: 'Gameplay/Vote1[/XInputControllerWindows/dpad,/SwitchProControllerHID/dpad,/SwitchProControllerHID1/dpad]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
+      value: 'Join/Join[/SwitchProControllerHID1/rightStickPress,/XInputControllerWindows/rightStickPress,/SwitchProControllerHID/rightStickPress]'
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
@@ -1050,7 +1110,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1019371024}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
@@ -1058,11 +1126,23 @@ PrefabInstance:
       value: OnVote
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerVoteInput, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerJoinListener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3063386898268520557, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
@@ -1135,7 +1215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5496606520832889571, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: currentHP
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5496606520832889571, guid: fd64160882d1ffd4ca511904489b8890, type: 3}
       propertyPath: targetImage
@@ -1214,22 +1294,42 @@ PrefabInstance:
       objectReference: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 22
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionId
       value: d3b9687e-ab88-4274-8e65-4e1bd8ac8178
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
+      value: 294b0d1f-bc9f-4232-ae7a-10a6e4d4216b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionName
       value: 'Gameplay/Vote1[/XInputControllerWindows/dpad,/SwitchProControllerHID/dpad,/SwitchProControllerHID1/dpad]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
+      value: 'Join/Join[/SwitchProControllerHID1/rightStickPress,/XInputControllerWindows/rightStickPress,/SwitchProControllerHID/rightStickPress]'
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
@@ -1237,7 +1337,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1941850653}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
@@ -1245,11 +1353,23 @@ PrefabInstance:
       value: OnVote
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerVoteInput, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerJoinListener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4833965005491224512, guid: aab8ccc8950ef204bb24ec98147eee9a, type: 3}
@@ -1393,22 +1513,42 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c329939df8e7f6b4a8640cc9dc91b9f2, type: 2}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 22
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionId
       value: d3b9687e-ab88-4274-8e65-4e1bd8ac8178
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
+      value: 294b0d1f-bc9f-4232-ae7a-10a6e4d4216b
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_ActionName
       value: 'Gameplay/Vote1[/XInputControllerWindows/dpad,/SwitchProControllerHID/dpad,/SwitchProControllerHID1/dpad]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
+      value: 'Join/Join[/SwitchProControllerHID1/rightStickPress,/XInputControllerWindows/rightStickPress,/SwitchProControllerHID/rightStickPress]'
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
@@ -1416,7 +1556,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1253965377}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
@@ -1424,11 +1572,23 @@ PrefabInstance:
       value: OnVote
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJoin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerVoteInput, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerJoinListener, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: m_ActionEvents.Array.data[21].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912175784235432134, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4833965005491224512, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
@@ -1493,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5496606520832889571, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: currentHP
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5496606520832889571, guid: bc05d4da226b4a74dbdb693f76518b59, type: 3}
       propertyPath: targetImage
