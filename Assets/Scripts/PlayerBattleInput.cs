@@ -25,9 +25,9 @@ public class PlayerBattleInput : MonoBehaviour
         if (v.magnitude < 0.5f) return;
 
         if (Mathf.Abs(v.x) > Mathf.Abs(v.y))
-            chosenBattle = v.x > 0 ? 'e' : 'w';
+            chosenBattle = v.x > 0 ? 's' : 'p';
         else
-            chosenBattle = v.y > 0 ? 'n' : 's';
+            chosenBattle = v.y > 0 ? 'r' : 'r';
 
         hasChosen = true;
 

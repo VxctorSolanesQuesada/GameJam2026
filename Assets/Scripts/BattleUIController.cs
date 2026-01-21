@@ -8,6 +8,7 @@ public class BattleUIController : MonoBehaviour
     public GameObject battlePanel;
     public Image player1Image;
     public Image player2Image;
+    public Sprite deafult;
 
     [Header("Intro Animation")]
     public GameObject introObject;      // objeto que se moverá hacia abajo
@@ -54,8 +55,35 @@ public class BattleUIController : MonoBehaviour
 
         introObject.SetActive(true);
 
-        introImage1.sprite = players[0].battleSprite;
-        introImage2.sprite = players[1].battleSprite;
+        PlayerCardImage pCI1 = introImage1.gameObject.GetComponent<PlayerCardImage>();
+        PlayerCardImage pCI2 = introImage2.gameObject.GetComponent<PlayerCardImage>();
+
+        switch (players[0].chosenBattle)
+
+        {
+            case 's':
+                pCI1.SetTijeras();
+                break;
+            case 'r':
+                pCI1.SetPiedra();
+                break;
+            case 'p':
+                pCI1.SetPapel();
+                break;
+        }
+        switch (players[1].chosenBattle)
+
+        {
+            case 's':
+                pCI2.SetTijeras();
+                break;
+            case 'r':
+                pCI2.SetPiedra();
+                break;
+            case 'p':
+                pCI2.SetPapel();
+                break;
+        }
 
         // Reset alpha
         SetAlpha(introImage1, 0f);
@@ -109,8 +137,10 @@ public class BattleUIController : MonoBehaviour
         SetAlpha(introImage1, 0f);
         SetAlpha(introImage2, 0f);
 
+        introImage1.sprite = deafult;
+        introImage2.sprite = deafult;
+
         // Ocultar objeto
-        introObject.SetActive(false);
     }
 
     // -------------------------------

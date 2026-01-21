@@ -1099,6 +1099,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Vote1"",
+                    ""type"": ""Value"",
+                    ""id"": ""d3b9687e-ab88-4274-8e65-4e1bd8ac8178"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -1121,6 +1130,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Vote"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a6def978-c209-4cfa-ad85-2a65d77858b9"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Vote1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1217,6 +1237,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Vote = m_Gameplay.FindAction("Vote", throwIfNotFound: true);
+        m_Gameplay_Vote1 = m_Gameplay.FindAction("Vote1", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1680,6 +1701,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Vote;
+    private readonly InputAction m_Gameplay_Vote1;
     /// <summary>
     /// Provides access to input actions defined in input action map "Gameplay".
     /// </summary>
@@ -1699,6 +1721,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Gameplay/Vote".
         /// </summary>
         public InputAction @Vote => m_Wrapper.m_Gameplay_Vote;
+        /// <summary>
+        /// Provides access to the underlying input action "Gameplay/Vote1".
+        /// </summary>
+        public InputAction @Vote1 => m_Wrapper.m_Gameplay_Vote1;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1731,6 +1757,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Vote.started += instance.OnVote;
             @Vote.performed += instance.OnVote;
             @Vote.canceled += instance.OnVote;
+            @Vote1.started += instance.OnVote1;
+            @Vote1.performed += instance.OnVote1;
+            @Vote1.canceled += instance.OnVote1;
         }
 
         /// <summary>
@@ -1748,6 +1777,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Vote.started -= instance.OnVote;
             @Vote.performed -= instance.OnVote;
             @Vote.canceled -= instance.OnVote;
+            @Vote1.started -= instance.OnVote1;
+            @Vote1.performed -= instance.OnVote1;
+            @Vote1.canceled -= instance.OnVote1;
         }
 
         /// <summary>
@@ -2016,5 +2048,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnVote(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Vote1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnVote1(InputAction.CallbackContext context);
     }
 }

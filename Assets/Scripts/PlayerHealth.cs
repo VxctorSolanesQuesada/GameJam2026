@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         hpPlayerText.text = $"{currentHP}";
-        ActivateUI(num);
+        //ActivateUI(num);
     }
 
     public void ActivateUI(int lostHP)
