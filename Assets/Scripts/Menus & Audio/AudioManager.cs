@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "MenuScene" || scene.name == "CreditsScene")
+        if (scene.name == "MenuScene" || scene.name == "CreditsScene" || scene.name == "OptionsScene" || scene.name == "TutorialScene")
         {
             PlayMenuMusic();
         }

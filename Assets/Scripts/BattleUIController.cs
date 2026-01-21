@@ -25,6 +25,8 @@ public class BattleUIController : MonoBehaviour
     private Vector3 introStartPos;
     private Vector3 introEndPos;
 
+    public AudioClip battleClip;
+
     // -------------------------------
     // FUNCIÓN 1: Mostrar batalla
     // -------------------------------
@@ -37,6 +39,7 @@ public class BattleUIController : MonoBehaviour
         }
 
         battlePanel.SetActive(true);
+        AudioManager.Instance.PlaySFX(battleClip);
 
         player1Image.sprite = players[0].battleSprite;
         player2Image.sprite = players[1].battleSprite;

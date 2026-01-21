@@ -8,6 +8,8 @@ public class TutorialSlideshow : MonoBehaviour
 
     private int currentIndex = 0;
 
+    public AudioClip pageFlipClip; 
+
     void Start()
     {
         UpdateSlide();
@@ -35,6 +37,7 @@ public class TutorialSlideshow : MonoBehaviour
 
     void UpdateSlide()
     {
+        AudioManager.Instance.PlaySFX(pageFlipClip);
         tutorialImage.sprite = tutorialSlides[currentIndex];
     }
 }

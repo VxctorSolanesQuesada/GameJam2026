@@ -44,6 +44,9 @@ public class GameManager : MonoBehaviour
     public float pauseHpTimer = 3.0f;
     public float pauseWonBattleTimer = 3.0f;
 
+    public AudioClip flipCardClip;
+    public AudioClip playerMoveClip;
+
 
     List<PlayerDirectionInput> GetPlayersByDirection(List<PlayerDirectionInput> list, char dir)
     {
@@ -152,6 +155,7 @@ public class GameManager : MonoBehaviour
                 //------Fase Escoger Dir---------
                 if (dirManager.AllPlayersHaveChosen(listDirInput))
                 {
+                    AudioManager.Instance.PlaySFX(flipCardClip);
                     foreach (PlayerDirectionInput pDI in listDirInput)
                     {
                         pDI.confirmInput();
@@ -371,9 +375,9 @@ public class GameManager : MonoBehaviour
                 Debug.Log("=== FASE: Move ? Moviendo jugadores y revelando tiles ===");
                 //---------Fase Move--------
 
-                
 
 
+                AudioManager.Instance.PlaySFX(playerMoveClip);
                 foreach (PlayerHealth n in playing)
                 {
                     PlayerDirectionInput pDI = n.gameObject.GetComponent<PlayerDirectionInput>();

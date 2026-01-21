@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: e80b42d2ac21db24a8e3f2fcaeaf4ebe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3158752850838557239
+    second: LOGOGAMEJAM_0
+  - first:
+      213: 6005120555912923243
+    second: LOGOGAMEJAM_1
+  - first:
+      213: -2006071398826521902
+    second: LOGOGAMEJAM_2
+  - first:
+      213: -4277798935144716250
+    second: LOGOGAMEJAM_3
+  - first:
+      213: 5237114945224010373
+    second: LOGOGAMEJAM_4
+  - first:
+      213: 4041594866112849540
+    second: LOGOGAMEJAM_5
+  - first:
+      213: 8592574404669577941
+    second: LOGOGAMEJAM_6
+  - first:
+      213: 2861721881795408722
+    second: LOGOGAMEJAM_7
+  - first:
+      213: 4762045548685441245
+    second: LOGOGAMEJAM_8
+  - first:
+      213: -2232187057204345153
+    second: LOGOGAMEJAM_9
+  - first:
+      213: -1184163238946502668
+    second: LOGOGAMEJAM_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 22
+        width: 177
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cde388940bd924d0800000000000000
+      internalID: -3158752850838557239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 26
+        width: 177
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6806904459765350800000000000000
+      internalID: 6005120555912923243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 27
+        width: 180
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dacfdef0b00924e0800000000000000
+      internalID: -2006071398826521902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_3
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 25
+        width: 131
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628a722888432a4c0800000000000000
+      internalID: -4277798935144716250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_4
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 25
+        width: 158
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a67f59b48fda840800000000000000
+      internalID: 5237114945224010373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_5
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 29
+        width: 197
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486e2b01e11a61830800000000000000
+      internalID: 4041594866112849540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_6
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 53
+        width: 154
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da917845e4fe3770800000000000000
+      internalID: 8592574404669577941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_7
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 15
+        width: 188
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253b062b3e0e6b720800000000000000
+      internalID: 2861721881795408722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_8
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 23
+        width: 202
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd830a5323f261240800000000000000
+      internalID: 4762045548685441245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_9
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 25
+        width: 158
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb64c17b2bda501e0800000000000000
+      internalID: -2232187057204345153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LOGOGAMEJAM_10
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 23
+        width: 187
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f78482eec1019fe0800000000000000
+      internalID: -1184163238946502668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LOGOGAMEJAM_0: -3158752850838557239
+      LOGOGAMEJAM_1: 6005120555912923243
+      LOGOGAMEJAM_10: -1184163238946502668
+      LOGOGAMEJAM_2: -2006071398826521902
+      LOGOGAMEJAM_3: -4277798935144716250
+      LOGOGAMEJAM_4: 5237114945224010373
+      LOGOGAMEJAM_5: 4041594866112849540
+      LOGOGAMEJAM_6: 8592574404669577941
+      LOGOGAMEJAM_7: 2861721881795408722
+      LOGOGAMEJAM_8: 4762045548685441245
+      LOGOGAMEJAM_9: -2232187057204345153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
